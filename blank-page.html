@@ -187,48 +187,202 @@
                     </ol>
                         <h2>Current Browsing Session</h2>
 
-                        <img src="images/Postcard.png"
-                             alt="Session Content Container"
-                             title="Session Postcard"
-                        />
+                        <div id="PostCard-wrapper">
+                            <img src="images/Postcard.png"
+                                 alt="Session Content Container"
+                                 title="Session Postcard"
+                            />
+
+                            <ul>
+                                <div id="SessionTitle">
+                                    <h4>Session Title: </h4>
+                                    <p><b>+ Session Title on the Same Line as the Header</b></p>
+                                    <p><b>Note: </b><i>Default Session Title is the 1st Link's HTML Title</i></p>
+                                </div>
+
+                                </br>
+
+                                <div id="SessionContent">
+                                    <h4>Session Content</h4>
+                                    <p><b>Note: </b><i>1. Link Title = HTML Title</i></p>
+                                    <p><b>Note: </b><i>2. HyperLink each Link Listed</i></p>
+                                    <p><b>Note: </b><i>PostCard Vertical Size should adjust Vertically if Links Exceed Vertical Size</i></p>
+                                    <li>1st Link</li>
+                                    <li>2nd Link</li>
+                                    <li>n<sup>th</sup> Link</li>
+                                </div>
+
+                                <hr>
+
+                                <div id="SessionCategory">
+                                    <fieldset>
+                                        <legend>Categories</legend>
+                                        <br />
+                                        <input type="search" name="search" placeholder="Search a Category or Add It Here" />
+                                        <input type="submit" value="Search" />
+
+                                        <hr>
+
+                                        <form action="">
+                                            <selct name="SessionCategory">
+                                                <option value="Business">Business</option>
+                                                <option value="Education">Education</option>
+                                                <option value="Shopping">Shopping</option>
+                                                <option value="Technology">Technology</option>
+                                            </selct>
+                                        </form>
+                                    </fieldset>
+
+                                </div>
+
+                                </br>
+
+                                <div id="SessionTags">
+                                    <fieldset>
+                                        <legend>Tags</legend>
+                                            <br />
+                                            <input type="search" name="search" placeholder="Search a Category or Add It Here" />
+                                            <input type="submit" value="Search" />
+
+                                            <hr>
+
+                                            <form action="">
+                                                <selct name="SessionTag" size="5" multiple="multiple">
+                                                    <option value="Business Model">Business Model</option>
+                                                    <option value="Interesting">Interesting</option>
+                                                    <option value="Random">Random</option>
+                                                    <option value="Software">Software</option>
+                                                </selct>
+                                            </form>
+                                    </fieldset>
+                                </div>
+
+                                </br>
+
+                                <div id = "ShareTo">
+                                    <h4>To: </h4>
+                                    <p><b>+ User Accounts Images for PostCard to be Sent To</b></p>
+                                    <p><b>Note: </b><i>If public, indicate PUBLIC</i></p>
+
+                                    <fieldset>
+                                        <legend>Share To</legend>
+                                        <br />
+                                        <input type="search" name="search" placeholder="Search a Contact" />
+                                        <input type="submit" value="Search" />
+
+                                        <hr>
+
+                                        <form action="">
+                                            <selct name="SessionTag" size="5" multiple="multiple">
+                                                <option value="Public">Public</option>
+                                                <option value="Contact 1">Contact 1</option>
+                                                <option value="Contact 2">Contact 2</option>
+                                                <option value="Contact 3">Contact 3</option>
+
+
+                                                <button>Local</button>
+                                                <button>Groups</button>
+                                                <button>Facebook</button>
+                                                <button>Twitter</button>
+                                            </selct>
+                                        </form>
+                                    </fieldset>
+
+                                </div>
+
+                                </br>
+
+                                <div id="UserProfilePic">
+                                    <h4>From: </h4>
+                                    <p><b>+ User Account Profile Pic</b></p>
+                                    <p><b>Note: </b><i>This is only for Test Purposes...User Account Sending will be a PostStamp above Category at the Top-Right</i></p>
+                                </div>
+
+                                <hr>
+
+                                <div id="CommentBox">
+                                    <h4>Comments</h4>
+                                    <p><i>Add Comment Box Here, Features are Below:</i></p>
+                                    <p><b><i>+ Rating (Up/Down Vote)</i></b></p>
+                                    <p><b><i>+ Reply Button (To Specific Post)</i></b></p>
+                                    <p><b><i>+ Reply All Button</i></b></p>
+                                    <p><b><i>+ Delete Button (For Admin Only?)</i></b></p>
+
+                                    <form action="">
+                                        <button>Up</button>
+                                        <button>Down</button>
+
+                                        <textarea name="comments" cols="75" rows="5">What do you think of the Session...</textarea>
+                                        <button>Reply</button>
+                                        <button>Delete</button>
+                                        <br />
+
+                                        <button>Reply All</button>
+                                    </form>
+                                </div>
+                        </ul>
+
+                        <!--
                         <ul>
-                            <h4>Session Title: </h4>
-                                <p><b>+ Session Title on the Same Line as the Header</b></p>
-                                <p><b>Note: </b><i>Default Session Title is the 1st Link's HTML Title</i></p>
+                            <div id="SessionTitle">
+                                <h4>Session Title: </h4>
+                                    <p><b>+ Session Title on the Same Line as the Header</b></p>
+                                    <p><b>Note: </b><i>Default Session Title is the 1st Link's HTML Title</i></p>
+                            </div>
+
                             </br>
-                            <h4>Session Content</h4>
-                                <p><b>Note: </b><i>1. Link Title = HTML Title</i></p>
-                                <p><b>Note: </b><i>2. HyperLink each Link Listed</i></p>
-                                <p><b>Note: </b><i>PostCard Vertical Size should adjust Vertically if Links Exceed Vertical Size</i></p>
-                                <li>1st Link</li>
-                                <li>2nd Link</li>
-                                <li>n<sup>th</sup> Link</li>
+
+                            <div id="SessionContent">
+                                <h4>Session Content</h4>
+                                    <p><b>Note: </b><i>1. Link Title = HTML Title</i></p>
+                                    <p><b>Note: </b><i>2. HyperLink each Link Listed</i></p>
+                                    <p><b>Note: </b><i>PostCard Vertical Size should adjust Vertically if Links Exceed Vertical Size</i></p>
+                                    <li>1st Link</li>
+                                    <li>2nd Link</li>
+                                    <li>n<sup>th</sup> Link</li>
+                            </div>
 
                             <hr>
 
-                            <h4>Session Category</h4>
-                                <p><b>+ Category Selection Form with Search and Input</b></p>
+                            <div id="SessionCategory">
+                                <h4>Session Category</h4>
+                                    <p><b>+ Category Selection Form with Search and Input</b></p>
+                            </div>
+
                             </br>
-                            <h4>Tags: </h4>
-                                <p><b>+ Meta-Tag Selection Form with Search and Input Function</b></p>
+
+                            <div id="SessionTags">
+                                <h4>Tags: </h4>
+                                    <p><b>+ Meta-Tag Selection Form with Search and Input Function</b></p>
+                            </div>
+
                             </br>
-                            <h4>To: </h4>
-                                <p><b>+ User Accounts Images for PostCard to be Sent To</b></p>
-                                <p><b>Note: </b><i>If public, indicate PUBLIC</i></p>
+
+                            <div id = "ShareTo">
+                                <h4>To: </h4>
+                                    <p><b>+ User Accounts Images for PostCard to be Sent To</b></p>
+                                    <p><b>Note: </b><i>If public, indicate PUBLIC</i></p>
+                            </div>
+
                             </br>
-                            <h4>From: </h4>
-                                <p><b>+ User Account Profile Pic</b></p>
-                                <p><b>Note: </b><i>This is only for Test Purposes...User Account Sending will be a PostStamp above Category at the Top-Right</i></p>
+
+                            <div id="UserProfilePic">
+                                <h4>From: </h4>
+                                    <p><b>+ User Account Profile Pic</b></p>
+                                    <p><b>Note: </b><i>This is only for Test Purposes...User Account Sending will be a PostStamp above Category at the Top-Right</i></p>
+                            </div>
 
                             <hr>
 
-                            <h4>Comments</h4>
-                                <p><i>Add Comment Box Here, Features are Below:</i></p>
-                                <p><b><i>+ Rating (Up/Down Vote)</i></b></p>
-                                <p><b><i>+ Reply Button (To Specific Post)</i></b></p>
-                                <p><b><i>+ Reply All Button</i></b></p>
-                                <p><b><i>+ Delete Button (For Admin Only?)</i></b></p>
-
+                            <div id="CommentBox">
+                                <h4>Comments</h4>
+                                    <p><i>Add Comment Box Here, Features are Below:</i></p>
+                                    <p><b><i>+ Rating (Up/Down Vote)</i></b></p>
+                                    <p><b><i>+ Reply Button (To Specific Post)</i></b></p>
+                                    <p><b><i>+ Reply All Button</i></b></p>
+                                    <p><b><i>+ Delete Button (For Admin Only?)</i></b></p>
+                            </div>
+                            -->
                         </ul>
                     </div>
                 </div>
@@ -248,7 +402,7 @@
 
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
-
+    </div>
 </body>
 
 </html>
