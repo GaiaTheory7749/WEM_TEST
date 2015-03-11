@@ -194,27 +194,24 @@
                             />
 
                             <ul>
-                                <div id="SessionTitle">
+                                <li id="SessionTitle">
                                     <h4>Session Title: </h4>
                                     <p><b>+ Session Title on the Same Line as the Header</b></p>
                                     <p><b>Note: </b><i>Default Session Title is the 1st Link's HTML Title</i></p>
-                                </div>
-
-                                </br>
-
-                                <div id="SessionContent">
-                                    <h4>Session Content</h4>
+                                </li>
+                                <li id="SessionContent">
+                                    <h4 id>Session Content</h4>
                                     <p><b>Note: </b><i>1. Link Title = HTML Title</i></p>
                                     <p><b>Note: </b><i>2. HyperLink each Link Listed</i></p>
                                     <p><b>Note: </b><i>PostCard Vertical Size should adjust Vertically if Links Exceed Vertical Size</i></p>
-                                    <li>1st Link</li>
-                                    <li>2nd Link</li>
-                                    <li>n<sup>th</sup> Link</li>
-                                </div>
+                                    <ul>
+                                        <li>1st Link</li>
+                                        <li>2nd Link</li>
+                                        <li>Link</li>
+                                    </ul>
+                                </li>
 
-                                <hr>
-
-                                <div id="SessionCategory">
+                                <li id="SessionCategory">
                                     <fieldset>
                                         <legend>Categories</legend>
                                         <br />
@@ -224,20 +221,18 @@
                                         <hr>
 
                                         <form action="">
-                                            <selct name="SessionCategory">
+                                            <select name="SessionCategory" title="SessionCategory">
                                                 <option value="Business">Business</option>
                                                 <option value="Education">Education</option>
                                                 <option value="Shopping">Shopping</option>
                                                 <option value="Technology">Technology</option>
-                                            </selct>
+                                            </select>
                                         </form>
                                     </fieldset>
 
-                                </div>
+                                </li>
 
-                                </br>
-
-                                <div id="SessionTags">
+                                <li id="SessionTags">
                                     <fieldset>
                                         <legend>Tags</legend>
                                             <br />
@@ -247,19 +242,17 @@
                                             <hr>
 
                                             <form action="">
-                                                <selct name="SessionTag" size="5" multiple="multiple">
+                                                <select name="SessionTag" size="5" multiple="multiple" title="SessionTag">
                                                     <option value="Business Model">Business Model</option>
                                                     <option value="Interesting">Interesting</option>
                                                     <option value="Random">Random</option>
                                                     <option value="Software">Software</option>
-                                                </selct>
+                                                </select>
                                             </form>
                                     </fieldset>
-                                </div>
+                                </li>
 
-                                </br>
-
-                                <div id = "ShareTo">
+                                <li id = "ShareTo">
                                     <h4>To: </h4>
                                     <p><b>+ User Accounts Images for PostCard to be Sent To</b></p>
                                     <p><b>Note: </b><i>If public, indicate PUBLIC</i></p>
@@ -273,34 +266,29 @@
                                         <hr>
 
                                         <form action="">
-                                            <selct name="SessionTag" size="5" multiple="multiple">
+                                            <select name="SessionTag" size="5" multiple="multiple" title="SessionTag">
                                                 <option value="Public">Public</option>
                                                 <option value="Contact 1">Contact 1</option>
                                                 <option value="Contact 2">Contact 2</option>
                                                 <option value="Contact 3">Contact 3</option>
-
-
-                                                <button>Local</button>
-                                                <button>Groups</button>
-                                                <button>Facebook</button>
-                                                <button>Twitter</button>
-                                            </selct>
+                                            </select>
+                                            </br>
+                                            <button>Local</button>
+                                            <button>Groups</button>
+                                            <button>Facebook</button>
+                                            <button>Twitter</button>
                                         </form>
                                     </fieldset>
 
-                                </div>
+                                </li>
 
-                                </br>
-
-                                <div id="UserProfilePic">
+                                <li id="UserProfilePic">
                                     <h4>From: </h4>
                                     <p><b>+ User Account Profile Pic</b></p>
                                     <p><b>Note: </b><i>This is only for Test Purposes...User Account Sending will be a PostStamp above Category at the Top-Right</i></p>
-                                </div>
+                                </li>
 
-                                <hr>
-
-                                <div id="CommentBox">
+                                <li id="CommentBox">
                                     <h4>Comments</h4>
                                     <p><i>Add Comment Box Here, Features are Below:</i></p>
                                     <p><b><i>+ Rating (Up/Down Vote)</i></b></p>
@@ -312,14 +300,14 @@
                                         <button>Up</button>
                                         <button>Down</button>
 
-                                        <textarea name="comments" cols="75" rows="5">What do you think of the Session...</textarea>
+                                        <textarea title="comments" name="comments" cols="75" rows="5">What do you think of the Session...</textarea>
                                         <button>Reply</button>
                                         <button>Delete</button>
                                         <br />
 
                                         <button>Reply All</button>
                                     </form>
-                                </div>
+                                </li>
                         </ul>
 
                         <!--
@@ -382,8 +370,9 @@
                                     <p><b><i>+ Reply All Button</i></b></p>
                                     <p><b><i>+ Delete Button (For Admin Only?)</i></b></p>
                             </div>
-                            -->
+
                         </ul>
+                        -->
                     </div>
                 </div>
                 <!-- /.row -->
