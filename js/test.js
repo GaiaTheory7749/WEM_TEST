@@ -17,7 +17,7 @@ function myFunction(tabTitle,tabURL,tabIcon) {
     if(tabTitle.length > 20) tabTitle = tabTitle.substring(0,20);
 
     newItemLink.textContent = tabTitle;
-    newItemLink.setAttribute("href",tabURL);
+    tabTitle.link(tabURL);
     /*newItemLink.setAttribute("src",tabIcon);
     not sure why this has not worked..
     also tried img src and applying both/either to newItem instead*/
