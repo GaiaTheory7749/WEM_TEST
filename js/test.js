@@ -18,8 +18,9 @@ function myFunction(tabTitle,tabURL,tabIcon) {
 
     newItemLink.textContent = tabTitle;
     tabTitle.link(tabURL);
-    /*newItemLink.setAttribute("src",tabIcon);
-    not sure why this has not worked..
+    /*var image = newItemLink.createAttribute("icon");
+    image.value = tabIcon;*/
+    /*not sure why icon has not shown..
     also tried img src and applying both/either to newItem instead*/
 
     newItem.appendChild(newItemLink);
